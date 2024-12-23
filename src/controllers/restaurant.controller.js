@@ -695,9 +695,9 @@ export const allDishes = async (req, res) => {
       const subCategories =
         category.subCategories && Array.isArray(category.subCategories)
           ? category.subCategories.map((subCategory) => ({
-              subCategoryId: subCategory._id,
-              subCategoryName: subCategory.subCategoryName,
-            }))
+            subCategoryId: subCategory._id,
+            subCategoryName: subCategory.subCategoryName,
+          }))
           : [];
 
       categories.push({

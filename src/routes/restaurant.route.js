@@ -26,10 +26,10 @@ routes.get('/allDishes/:restaurantId', allDishes); // Get all dishes for a resta
 routes.get('/allRestaurants', allRestaurants); // Get all restaurants
 routes.get('/allCategories/:restaurantId', allCategories)
 routes.put('/createCategory/:restaurantId', createCategory); // Create a new category in a restaurant
-routes.put('/createDish/:categoryId', createDish ); // Create a dish in a category
+routes.put('/createDish/:categoryId', createDish); // Create a dish in a category
 routes.put('/createDish/:categoryId/:subCategoryId', createDish);  // Route for creating a dish in a subcategory
 routes.post('/createRestaurant', uploadRestaurantLogo, createRestaurant); // Create a new restaurant
-routes.put('/createSubcategory/:restaurantId/:categoryId',createSubCategory); // Create a subcategory within a category
+routes.put('/createSubcategory/:restaurantId/:categoryId', createSubCategory); // Create a subcategory within a category
 routes.delete('/deleteRestaurant/:restaurantId', deleteRestaurant); // Delete a restaurant
 routes.put('/editRestaurant/:restaurantId', uploadRestaurantLogo, editRestaurant); // Edit restaurant details
 routes.get('/searchRestaurants', searchRestaurant); // Search for restaurants
@@ -39,7 +39,7 @@ routes.get('/searchDish/:restaurantId', searchDish);
 routes.delete('/deleteDish/:restaurantId/:dishId', deleteDish);
 routes.put('/editDish/:dishId/:categoryId', editDish);
 routes.put('/editDish/:dishId/:categoryId/:subCategoryId', editDish);
-routes.get('/dishCount/:restaurantId' ,countDishesInRestaurant);
+routes.get('/dishCount/:restaurantId', countDishesInRestaurant);
 
 
 export default routes;
